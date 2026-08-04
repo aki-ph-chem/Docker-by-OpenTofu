@@ -1,7 +1,10 @@
 output "container_id" {
   description = "ID of Docker container"
-  value       = docker_container.nginix.id
+  value       = docker_container.nginx.id
 }
 
-# ToDo
-# "image_id"
+output "image_id" {
+  description = "ID of the Docker image"
+  value       = docker_image.nginx.id
+}
+
