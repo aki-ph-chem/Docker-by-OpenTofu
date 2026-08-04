@@ -3,3 +3,9 @@ variable "container_name" {
   type        = string
   default     = "ExampleNginxContainer"
 }
+
+variable "port_external" {
+  description = "port number outside container"
+  type        = number
+  default     = 8080
+}
