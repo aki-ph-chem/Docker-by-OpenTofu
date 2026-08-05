@@ -15,6 +15,7 @@
         name = "opentofu-docker";
 
         packages = [
+          pkgs.tofu-ls
           opentofu-with-docker
         ];
 
